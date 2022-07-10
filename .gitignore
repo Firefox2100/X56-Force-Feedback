@@ -57,3 +57,5 @@ OBJ/
 *.scvd
 DebugConfig/
 Listings/
+Firmware/USER/JLinkLog.txt
+Firmware/USER/JLinkSettings.ini
