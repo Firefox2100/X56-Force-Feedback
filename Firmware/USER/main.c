@@ -22,7 +22,7 @@ int main(void)
 	delay_ms(1800);
 	
 	//Initiate TIM4 for PWM output
-	TIM4_PWM_Init(199,7199);
+	TIM4_PWM_Init(1999,719);
 	
 	//Disconnect and reconnect USB
 	USB_Port_Set(0);

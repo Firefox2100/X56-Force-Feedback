@@ -79,10 +79,10 @@ void set_servo(u8 buffer[])
 	s1 = (buffer[8] - '0') * 100 + (buffer[9] - '0') * 10 + (buffer[10] - '0');
 	s1 = (buffer[12] - '0') * 100 + (buffer[13] - '0') * 10 + (buffer[14] - '0');
 	
-	TIM_SetCompare1(TIM4, s1 / 180 * 20 + 5);
-  TIM_SetCompare2(TIM4, s2 / 180 * 20 + 5);
-  TIM_SetCompare3(TIM4, s3 / 180 * 20 + 5);
-  TIM_SetCompare4(TIM4, s4 / 180 * 20 + 5);
+	TIM_SetCompare1(TIM4, s1 + 50);
+	TIM_SetCompare2(TIM4, s2 + 50);
+	TIM_SetCompare3(TIM4, s3 + 50);
+	TIM_SetCompare4(TIM4, s4 + 50);
 
 	
 }
